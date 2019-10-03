@@ -20,7 +20,7 @@ const randomArray = (length, min, max,) => {
     const myArray = Array(length).fill().map(() => Math.round(Math.random() * (max - min + 1) + min));
     return myArray
 };
-console.group(`%c Fill`, 'color: pink');
+console.group(`%c Fill`, 'color: yellow');
 
 console.log(...randomArray(50,10,30));
 
