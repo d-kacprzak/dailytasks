@@ -17,12 +17,12 @@ for(let i = 0; i < tabUsers.length; i++ ){
         console.log(tabUsers[i].name);
     }
 }
-console.groupEnd()
+console.groupEnd();
 console.group("%c console.log z funkcji", "color: violet");
 
 const ageUpper = (array)=> {
-     array.filter(item => {
-         return item.age >= 18 ? console.log(item.name) : ""
+     array.filter(({name, age}) => {
+         return age >= 18 ? console.log(name) : ""
      });
 };
 
