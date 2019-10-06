@@ -37,9 +37,9 @@ function monthName(nr) {
         case 12:
             return "grudzień";
         default:
-            return "Podaj liczbę nr miesiąca z przedziału 1-12"
+            return "Podaj nr miesiąca z przedziału liczb od 1 do 12"
     }
 
 }
 
-console.log(monthName(13));
+console.log(monthName(8));
