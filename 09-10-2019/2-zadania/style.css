@@ -1,0 +1,17 @@
+button {
+    padding: 0.8em 3em;
+    background: tomato;
+    color: #FFF;
+    border: 0;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    transition: 0.5s background-color, 0.5s box-shadow;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #AD1A00;
+    color:#fff;
+}

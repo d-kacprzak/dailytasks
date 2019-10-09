@@ -1,0 +1,49 @@
+body {
+    background: #eee;
+}
+.container {
+    padding: 0 30px;
+    font-family: sans-serif;
+}
+.card {
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.card h2, .card h3 {
+    margin-top:0;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.row .col {
+    flex-grow: 1;
+    padding: 0 15px;
+}
+.section {
+    margin-bottom: 30px;
+}
+.list {
+    list-style:none;
+    padding:-0;
+    margin:0;
+}
+.list li {
+    padding: 10px;
+    background: #eee;
+    margin-bottom: 5px;
+}
+.btn {
+    padding: 20px 40px;
+    background: tomato;
+    color:#fff;
+    border:0;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.btn[type="submit"] {
+    background: #41D3BD;
+}
