@@ -1,0 +1,35 @@
+.pretty {
+    width:90%;
+    margin:10rem auto;
+    text-align: center;
+    border-radius: 0.75rem;
+    list-style:none;
+    padding:0;
+    display: flex;
+}
+.pretty li:nth-of-type(2n) {
+    background:#2c70e0;
+}
+.pretty li:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.pretty li:last-child {
+    border-radius: 0 4px 4px 0;
+}
+.pretty li {
+    background: #4285F4;
+    color:#fff;
+    font-size:1.1rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding:1.5rem 1rem;
+}
+.pretty li.first {
+    border-radius: 2rem 0 0 2rem;
+    background: #D3055D;
+}
+.pretty li.last {
+    border-radius: 0 2rem 2rem 0;
+    background: #8BC90A;
+}
