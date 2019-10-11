@@ -1,0 +1,21 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    max-width: 90vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+.box{
+    margin: 0.5vw;
+    border-radius: 5px;
+}
