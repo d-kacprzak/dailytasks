@@ -9,7 +9,7 @@ function getRandomColor() {
         colorOne += letters[Math.floor(Math.random() * 16)];
         colorTwo += letters[Math.floor(Math.random() * 16)];
     }
-    return `linear-gradient(to top,${colorOne} 0%,${colorTwo} 100%)`;
+    return `linear-gradient(135deg,${colorOne} 10%,${colorTwo} 100%)`;
 }
 function appendBox() {
     const square = document.createElement("div");

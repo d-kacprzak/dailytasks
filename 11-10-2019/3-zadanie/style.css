@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.list {
+    display:flex;
+    border:2px solid #aaa;
+    padding:20px;
+}
+.list .element {
+    height:200px;
+    flex-grow: 1;
+    margin:10px;
+    display: flex;
+    background-image: linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%);
+    border-radius: 5px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.delete {
+    display: inline-block;
+    padding:15px 30px;
+    background: tomato;
+    border-radius: 5px;
+    color:#fff;
+    border:0;
+    margin:10px 0;
+}
