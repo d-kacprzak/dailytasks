@@ -9,13 +9,13 @@ html{
 
 .container{
     display: flex;
-    max-width: 90vw;
+    max-width: 80vw;
     margin: 0 auto;
     flex-wrap: wrap;
 
 }
 
 .box{
-    margin: 0.5vw;
+    margin: 1vw;
     border-radius: 5px;
 }
