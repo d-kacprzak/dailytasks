@@ -1,5 +1,6 @@
 const list = document.querySelector(".nav");
 const li = list.querySelectorAll("li");
+console.log(li)
 
 list.addEventListener("click", e =>{
     e.preventDefault();
