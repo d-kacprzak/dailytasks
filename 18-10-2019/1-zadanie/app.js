@@ -21,5 +21,4 @@ const students = ['John', 'Bill', 'Emma', 'Stella', 'Rob'];
 
 const getPerson = (array) => array[Math.floor(Math.random() * array.length)];
 
-
 console.log(getPerson(students));
