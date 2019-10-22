@@ -18,7 +18,7 @@ document.querySelector('#btn').addEventListener('click', () => {
         <a href="mailto: email@wp.pl">${users[user].email}</a>
         </div>
         
-        <button type="button" class="btn show-posts">
+        <button type="button" close="true" class="btn show-posts">
         Show posts
         </button>
         
@@ -30,9 +30,20 @@ document.querySelector('#btn').addEventListener('click', () => {
       userList.innerHTML = output;
 
       document.querySelectorAll('.show-posts').forEach((el) => {
-        el.addEventListener('click', () => {
+        el.addEventListener('click', (e) => {
           const xhrPosts = new XMLHttpRequest();
           xhrPosts.open('GET', 'https://jsonplaceholder.typicode.com/posts/', true);
+
+          if (el.getAttribute('close') === 'true') {
+            e.target.closest('.user-cnt').children[3].style.display = 'block';
+            el.innerHTML = 'Hide posts';
+            el.setAttribute('close', 'false');
+          } else {
+            e.target.closest('.user-cnt').children[3].style.display = 'none';
+            el.innerHTML = 'Show posts';
+            el.setAttribute('close', 'true');
+          }
+
 
           xhrPosts.addEventListener('load', () => {
             if (this.status === 200) {
