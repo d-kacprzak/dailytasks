@@ -1,0 +1,32 @@
+*,*:before,*:after{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+  background: #777777;
+}
+.container{
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 1400px;
+  justify-content: center;
+}
+.user{
+  margin: .4vw;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 15vw;
+  height: 10vw;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+

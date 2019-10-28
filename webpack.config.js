@@ -1,12 +1,14 @@
+/* eslint-disable */
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-  entry: './src/js/app.js',
+  entry: './28-10-2019/2-zadanie-destructuring/app.js',
   output: {
-    path: `${__dirname}/dist/js`,
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  watch: false,
-  mode: "development", //ta opcja zostanie pominięta jeżeli użyjemy npm run build
-  devtool: "source-map",
+  
   module: {
     rules: [
       {
@@ -18,7 +20,23 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
     ]
-  }
-}
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './28-10-2019/2-zadanie-destructuring/index.html',
+  })
+  ]
+};
