@@ -54,7 +54,7 @@ users.map((item) => {
   
   const div = document.createElement('div');
   div.classList.add('user');
-  div.innerHTML = `</strong>${name} ${surname}</strong>`
+  div.innerHTML = `</strong>${name} ${surname}</strong>`;
   // div.innerHTML = text;
   document.querySelector('.container').appendChild(div);
 });
