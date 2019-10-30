@@ -1,0 +1,42 @@
+.tabs{
+    list-style-type: none;
+    margin: 5px 0 0 0;
+    padding: 0 0 10px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.tabs a{
+    width: 20%;
+    display: inline-block;
+    height: 3em;
+    margin: 2px;
+    background: #eee;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 3em;
+    text-decoration: none;
+    text-align: center;
+    color: #1F2124;
+}
+
+.tabs a.active{
+    background: #ec185d;
+    color: #fff;
+}
+
+.tab-container{
+
+}
+
+.tabs-container.js .tab-content{
+    display: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: #eee;
+    border-radius: 2px;
+}
+
+.tabs-container.js .tab-content.active{
+    display: block;
+}
